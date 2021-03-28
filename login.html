@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
    
     <nav class="navbar">
-        <div class="brand-title">Brand</div>
+        <div class="brand-title">FlyTime</div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -27,24 +29,40 @@
         </div>  
 
     </nav>
-    <section>
-        <form>
-            <label for="fname" class="field">First name:</label>
-            <input type="text" id="fname" name="fname" placeholder ="Last name">
-            <label for="lname" class="field" >Last name:</label>
-            <input type="text" id="lname" name="lname" placeholder ="Last name">
-            <input type="submit" value="Login" class="field" onclick="storeData()" >
-          </form>
+    <section class="wrapper">
 
+        <section class="wrap2">
+         
+        <form>
+            
+            <input type="text" id="username" name="username" placeholder ="User name">
+            <input type="password" id="password" name="password" placeholder ="Password">
+            <a  class="linkstyle"href="register.html">Not a member yet? Create a acount here</a>
+            <input type="submit" value="Login" class="field" onclick="storeData()" >
+            
+          </form>
+            
+
+    </section>
 
     </section>
 
     <article>
-        <div><h1 id="result"></h1></div>
+    
     </article>
 
-    <footer>
-        <p>Hej</p>
+    <footer>    
+        <div>
+            <ul class="footer-dec"> 
+                <li><p>Contact US</p></li>
+                <li><p>About</p></li>
+                <li><p>Career</p></li>
+            </ul>
+            </div>
+            <div class="local"> <h1 id="result"></h1></div>
+    
+        <script src="../js/func.js"></script>
+        <script src="../js/menu.js"></script>
         <script src="../js/login.js"></script>
     </footer>
     

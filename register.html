@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>New User</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Log in</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
             </ul>
@@ -27,21 +29,41 @@
         </div>  
 
     </nav>
-    <section>
-        <form>
-            <label for="fname" class="field">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname" class="field">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
+    <section class="wrapper">
+    <section class="wrap2">
+        <form id="regForm" name="regForm" onsubmit="validateFormData()">
+            <h1>Sign up</h1>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last name"required>
+            <input type="text" id="username" name="username" placeholder="User name"required>
+            <input type="password" id="password" name="password" placeholder="Password"required>
+            <input type="email" id="email" name="email" placeholder="Email"required>
+            <input type="tel" id="tel" name="tel" placeholder="Phone"required>
             <input type="submit" value="Submit" class="field">
           </form>
 
 
+          <div id="test">
+
+          </div>
+
+
+    </section>
     </section>
 
-    <footer>
-        <p>Hej</p>
+    <footer>    
+        <div>
+            <ul class="footer-dec"> 
+                <li><p>Contact US</p></li>
+                <li><p>About</p></li>
+                <li><p>Career</p></li>
+            </ul>
+            </div>
+            <div class="local"><h1 id="result"></h1></div>
+    
         <script src="../js/func.js"></script>
+        <script src="../js/menu.js"></script>
+        <script src="../js/login.js"></script>
     </footer>
 </body>
 </html>

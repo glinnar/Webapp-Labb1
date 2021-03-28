@@ -1,14 +1,11 @@
 function storeData(){
-    let userName = document.getElementById("fname");
-    let passWord = document.getElementById("lname");
-    localStorage.setItem("fname",userName.value);
-    localStorage.setItem("lname",passWord.value)
+    let userName = document.querySelector("#username");
+    localStorage.setItem("#username",userName.value);
 }
 
-var storedValue = localStorage.getItem("fname");
-var stores = localStorage.getItem("lname")
+var storedValue = localStorage.getItem("username");
 
 
-console.log(storedValue,stores);
+console.log(storedValue);
 
-document.querySelector('#result').innerHTML = localStorage.getItem('fname') + localStorage.getItem('lname');
+document.querySelector('#result').innerHTML = "Logged in as: "+ localStorage.getItem('#username');
