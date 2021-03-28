@@ -1,0 +1,25 @@
+{
+    "Cities": [
+      {
+        "name": "Paris",
+        "country": "France",
+        "date": "2016-08-01"
+      },
+      {
+        "name": "Tokyo",
+        "country": "Japan",
+        "date": "2016-08-01"
+      },
+
+      {
+        "name": "Tokyo",
+        "country": "Japan",
+        "date": "2016-08-01"
+      }
+     
+    ]
+
+     
+     
+    
+  }

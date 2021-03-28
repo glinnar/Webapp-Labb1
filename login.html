@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login</title>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="brand-title">Brand</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+            </ul>
+
+        </div>  
+
+    </nav>
+    <section>
+        <form>
+            <label for="fname" class="field">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder ="Last name">
+            <label for="lname" class="field" >Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder ="Last name">
+            <input type="submit" value="Login" class="field" onclick="storeData()" >
+          </form>
+
+
+    </section>
+
+    <article>
+        <div><h1 id="result"></h1></div>
+    </article>
+
+    <footer>
+        <p>Hej</p>
+        <script src="../js/login.js"></script>
+    </footer>
+    
+</body>
+</html>
