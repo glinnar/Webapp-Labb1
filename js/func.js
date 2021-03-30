@@ -19,9 +19,8 @@ function getParis(getDivID,){
         let cities = city.Paris;
        cities.map(function(cities) {
             let li = createNode('p');
-            let br = createNode('br');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
-            append(id, li,br);
+            li.innerHTML = cities.name + "<br> " + cities.country;
+            append(id, li);
         })
     
     })
@@ -45,7 +44,7 @@ function getParis(getDivID,){
        cities.map(function(cities) {
             let li = createNode('p');
             let br = createNode('br');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country;
             append(id, li,br);
         })
     
@@ -68,7 +67,7 @@ function getParis(getDivID,){
         let cities = city.Berlin;
        cities.map(function(cities) {
             let li = createNode('li');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country;
             append(id, li);
         })
     
@@ -90,7 +89,7 @@ function getParis(getDivID,){
         let cities = city.London;
        cities.map(function(cities) {
             let li = createNode('li');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country;
             append(id, li);
         })
     
@@ -113,7 +112,7 @@ function getParis(getDivID,){
         let cities = city.NewYork;
        cities.map(function(cities) {
             let li = createNode('li');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country ;
             append(id, li);
         })
     
@@ -135,7 +134,7 @@ function getParis(getDivID,){
         let cities = city.Miami;
        cities.map(function(cities) {
             let li = createNode('li');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country;
             append(id, li);
         })
     
@@ -159,7 +158,7 @@ function getParis(getDivID,){
         let cities = city.Prague;
        cities.map(function(cities) {
             let li = createNode('li');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country;
             append(id, li);
         })
     
@@ -173,16 +172,16 @@ function getParis(getDivID,){
   getPrague('#Prague');
 
 
-  function getMadrid(getDivID,){
+  function getRome(getDivID,){
     let id = document.querySelector(getDivID);
     
     fetch(url)
     .then((resp) => resp.json())
     .then(function(city) {
-        let cities = city.Madrid;
+        let cities = city.Rome;
        cities.map(function(cities) {
             let li = createNode('li');
-            li.innerHTML = cities.name + " " + cities.country +" "+ cities.date;
+            li.innerHTML = cities.name + "<br> " + cities.country;
             append(id, li);
         })
     
@@ -193,7 +192,7 @@ function getParis(getDivID,){
     }); 
 
   }
-  getMadrid('#Madrid');
+  getRome('#Rome');
 
 
   

@@ -1,11 +1,22 @@
+
+let yoo = document.querySelector('#result').innerHTML = "Logged in as: "+ localStorage.getItem('#username');
+
 function storeData(){
     let userName = document.querySelector("#username");
     localStorage.setItem("#username",userName.value);
+    
+    
+
 }
 
-var storedValue = localStorage.getItem("username");
+ 
+
+function logOut(){
+    localStorage.clear();
+    window.location.reload();
+
+    
+}
 
 
-console.log(storedValue);
 
-document.querySelector('#result').innerHTML = "Logged in as: "+ localStorage.getItem('#username');

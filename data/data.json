@@ -2,16 +2,16 @@
     "Paris": [
       {
         "name": "Paris",
-        "country": "France",
-        "date": "2016-08-01"
+        "country": "France"
+       
       }
     ],
 
     "Tokyo": [
       {
         "name": "Tokyo",
-        "country": "Japan",
-        "date": "2016-08-01"
+        "country": "Japan"
+       
 
       }
     ],
@@ -19,48 +19,48 @@
     "Berlin": [
      {
       "name": "Berlin",
-      "country": "Germany",
-      "date": "2016-08-01"
+      "country": "Germany"
+      
       
     }
    ],
    "London": [
     {
      "name": "London",
-     "country": "England",
-     "date": "2016-08-01"
+     "country": "England"
+     
      
    }
   ],
   "NewYork": [
     {
      "name": "New York",
-     "country": "USA",
-     "date": "2016-08-01"
+     "country": "USA"
+    
      
    }
   ],
   "Miami": [
     {
      "name": "Miami",
-     "country": "USA",
-     "date": "2016-08-01"
+     "country": "USA"
+     
      
    }
   ],
   "Prague": [
     {
      "name": "Prague",
-     "country": "Check",
-     "date": "2016-08-01"
+     "country": "Czech Republic"
+     
      
    }
   ],
-  "Madrid": [
+  "Rome": [
     {
-     "name": "Madrid",
-     "country": "Spain",
-     "date": "2016-08-01"
+     "name": "Rome",
+     "country": "Italy"
+     
      
    }
   ]

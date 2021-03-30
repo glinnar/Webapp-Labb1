@@ -12,39 +12,77 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #023059;
-  background-image:url("../img/background.jpg");
+  background-image: url("../img/background.jpg");
 }
-h1{
-  color:white;
-  font-family: 'Roboto Slab', serif;
+h1 {
+  color: white;
+  font-family: "Roboto Slab", serif;
   text-align: center;
 }
-.text-dec{
+.text-dec {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   list-style: none;
-  text-align: justify;
+  line-height: 2em;
+  font-size: 1.5em;
+  text-align: center;
 }
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
 }
+.text-dec2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 1.5em;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+  background-color: #023059;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.box2 {
+  flex-basis: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.book-button2 {
+  background-color: #5d7ca6;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 20%;
+  font-family: "Roboto", sans-serif;
+}
 
-.linkstyle{
+.linkstyle {
   color: white;
 }
 
-.local{
+.local {
+  display: flex;
   width: 100%;
-  background-color: black;
-  
+  flex-basis: 1%;
+  align-items: center;
+  background-color: #03588c;
+  cursor: pointer;
+  height: auto;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #03588C   ;
+  background-color: #03588c;
   color: white;
 }
 
@@ -68,11 +106,11 @@ h1{
   color: white;
   padding: 1rem;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar-links li:hover {
-  background-color:#73A2BF;
+  background-color: #73a2bf;
 }
 
 .toggle-button {
@@ -107,6 +145,15 @@ h1{
   width: 80%;
   margin: 0 auto;
 }
+.image2 {
+  width: 50%;
+  align-items: center;
+
+  border-bottom: 3px black solid;
+}
+.image2 img {
+  width: 100%;
+}
 
 .image {
   margin: 5px;
@@ -115,13 +162,19 @@ h1{
   width: 250px;
   height: 250;
   border-bottom: 3px black solid;
+  transition: transform 0.1s; /* Animation */
 }
 
 .image img {
   width: 100%;
 }
+.image:hover {
+  transform: scale(1.1);
+}
+
 .book-button {
-  background-color:#5D7CA6;
+  display: none;
+  background-color: #5d7ca6;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -129,7 +182,7 @@ h1{
   margin: 4px 2px;
   cursor: pointer;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .book-button:hover {
   border-bottom: 3px solid black;
@@ -140,79 +193,91 @@ footer {
   left: 0;
   bottom: 0;
   text-align: center;
-  background-color: #03588C;
+  background-color: #03588c;
   margin-top: auto;
-  color:white;
-  font-family: 'Roboto', sans-serif;
-  
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
-.footer-dec{
+.footer-dec {
   list-style: none;
 }
 
 /*Laptop*/
-@media screen and (min-width:950px){
-
-  h1{
-    color:white;
-    font-family: 'Roboto Slab', serif;
+@media screen and (min-width: 950px) and (max-width: 1600px) {
+  h1 {
+    color: white;
+    font-family: "Roboto Slab", serif;
     text-align: center;
   }
-  .text-dec{
+  .text-dec {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     list-style: none;
+    line-height: 2em;
+    font-size: 1.5em;
   }
+
+  .text-dec2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.1em;
+  }
+
   .wrapper {
     width: 100%;
     margin: 0 auto;
   }
-  
-  .linkstyle{
+
+  .linkstyle {
     color: white;
   }
-  
-  .local{
+
+  .local {
     width: 100%;
-    background-color: black;
-    
+    flex-basis: 1%;
+    align-items: center;
+    background-color: #03588c;
+    height: auto;
   }
-  
+
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #03588C   ;
+    background-color: #03588c;
     color: white;
   }
-  
+
   .brand-title {
     font-size: 1.5rem;
     margin: 0.5rem;
   }
-  
+
   .navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
   }
-  
+
   .navbar-links li {
     list-style: none;
   }
-  
+
   .navbar-links li a {
     text-decoration: none;
     color: white;
     padding: 1rem;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
-  
+
   .navbar-links li:hover {
-    background-color:#73A2BF;
+    background-color: #73a2bf;
   }
-  
+
   .toggle-button {
     position: absolute;
     top: 0.75rem;
@@ -223,14 +288,14 @@ footer {
     width: 30px;
     height: 21px;
   }
-  
+
   .toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
   }
-  
+
   .flex-container {
     display: flex;
     background-color: #023059;
@@ -241,30 +306,38 @@ footer {
     flex-basis: 17%;
   }
 
-  
   .wrap2 {
     width: 90%;
     margin: 0 auto;
   }
-  
+
   .image {
     margin: 5px;
     float: left;
     width: 250px;
-    height: 250;
+    height: 250px;
     border-bottom: 3px black solid;
+    transition: transform 0.2s; /* Animation */
   }
-  .image2{
-    margin: 5px;
-    border-bottom: 3px black solid;
+  .image2 {
+    width: 50%;
+    align-items: center;
 
+    border-bottom: 3px black solid;
   }
-  
+  .image2 img {
+    width: 100%;
+  }
+
   .image img {
     width: 100%;
   }
+  .image:hover {
+    transform: scale(1.1);
+  }
   .book-button {
-    background-color:#5D7CA6;
+    display: none;
+    background-color: #5d7ca6;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -272,7 +345,7 @@ footer {
     margin: 4px 2px;
     cursor: pointer;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   .book-button:hover {
     border-bottom: 3px solid black;
@@ -283,17 +356,15 @@ footer {
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: #03588C;
+    background-color: #03588c;
     margin-top: auto;
-    color:white;
-    font-family: 'Roboto', sans-serif;
-    
+    color: white;
+    font-family: "Roboto", sans-serif;
   }
-  .footer-dec{
+  .footer-dec {
     list-style: none;
   }
 }
-
 
 /*Mobile*/
 @media screen and (min-width: 200px) and (max-width: 600px) {
@@ -305,6 +376,19 @@ footer {
     flex-direction: column;
     min-height: 100vh;
   }
+  .text-dec {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+  }
+  .text-dec2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.1em;
+  }
   .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -312,7 +396,6 @@ footer {
   .wrap2 {
     width: 100%;
     margin: 0 auto;
-    
   }
   .toggle-button {
     display: flex;
@@ -351,7 +434,7 @@ footer {
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: #03588C;
+    background-color: #03588c;
     margin-top: auto;
   }
 
@@ -368,7 +451,15 @@ footer {
     text-align: left;
     border-bottom: 1px solid black;
   }
+  .image2 {
+    width: 100%;
+    align-items: center;
 
+    border-bottom: 3px black solid;
+  }
+  .image2 img {
+    width: 100%;
+  }
 
   .image {
     margin: 5px;
@@ -380,22 +471,48 @@ footer {
     height: auto;
   }
   .book-button {
-    background-color:#5D7CA6;
+    background-color: #5d7ca6;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    
   }
 
   .book-button:hover {
     border-bottom: 3px solid black;
   }
+
+  .text-dec2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-align: justify;
+  }
+  .container2 {
+    width: 100%;
+    display: flex;
+    background-color: #023059;
+    flex-direction: column;
+  }
+  .box2 {
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  .book-button2 {
+    background-color: #5d7ca6;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
 }
-
-
 
 /*Tablet*/
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -407,6 +524,20 @@ footer {
     flex-direction: column;
     min-height: 100vh;
   }
+  .text-dec {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+  }
+
+  .text-dec2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.1em;
+  }
   .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -414,7 +545,6 @@ footer {
   .wrap2 {
     width: 100%;
     margin: 0 auto;
-    
   }
   .toggle-button {
     display: flex;
@@ -453,7 +583,7 @@ footer {
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: #03588C;
+    background-color: #03588c;
     margin-top: auto;
   }
 
@@ -470,7 +600,15 @@ footer {
     text-align: left;
     border-bottom: 1px solid black;
   }
+  .image2 {
+    width: 100%;
+    align-items: center;
 
+    border-bottom: 3px black solid;
+  }
+  .image2 img {
+    width: 100%;
+  }
 
   .image {
     margin: 5px;
@@ -482,19 +620,45 @@ footer {
     height: auto;
   }
   .book-button {
-    background-color:#5D7CA6;
+    background-color: #5d7ca6;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    
   }
 
   .book-button:hover {
     border-bottom: 3px solid black;
   }
+
+  .text-dec2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-align: justify;
+  }
+  .container2 {
+    width: 100%;
+    display: flex;
+    background-color: #023059;
+    flex-direction: column;
+  }
+  .box2 {
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  .book-button2 {
+    background-color: #5d7ca6;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
 }
-
-

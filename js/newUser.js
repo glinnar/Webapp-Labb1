@@ -7,7 +7,7 @@ function validateFormData(){
     let password = document.forms["regForm"]["password"].value;
     let email = document.forms["regForm"]["email"].value;
     let phone = document.forms["regForm"]["tel"].value;
-    
+    let succes = false;
     if (fname == "") {
       alert("First name must be filled out");
       return false;
@@ -30,24 +30,29 @@ function validateFormData(){
         return false;
       }
 
-    if(regex.test(phone)){
-       
-              
-    }else{ 
-        alert("Phone must contain 10 numbers");
-       
-        
-    }
+
 
 
     if(emailRegex.test(email)){
-               
+           
         
     }else{ 
         alert("You have entered an invalid email address!")
-        console.log(email);
+       
         
     }
+
+    if(regex.test(phone)){
+     
+             
+   }else{ 
+       alert("Phone must contain 10 numbers");
+      
+     
+   }
+
+
+    
 
 }
 
