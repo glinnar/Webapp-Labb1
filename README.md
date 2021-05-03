@@ -1,3 +1,3 @@
 #
 
-Labb1 i Webbapplikationskursen. Skapa en egen hemsida med HTML5,CSS och JS.
+Lab1 in the Web application course. Create a website with HTML5,CSS och JS.
